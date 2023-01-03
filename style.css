@@ -10,7 +10,7 @@ body{
     height: 48px;
 }
 
-.input-texto{
+.box-texto{
     position: absolute;
     top: 142px;
     left:  137px;
@@ -18,39 +18,61 @@ body{
     background-color: transparent;
     border: none;
     outline: none;
-    width: 43em;
+    width: 40em;
     height: 15em;
+}
+
+.restricciones{
+    position: relative;
+    top: 490px;
+    
 }
 
 .bi-exclamation-circle-fill{
     position: absolute;
-    top: 490px;
-    left: 89px;
+    left: 140px;
 }
 
 .info{
     position: absolute;
-    top: 490px;
-    left: 110px;
+    left: 160px;
 }
 
 
 .encriptar{
     position: absolute;
-    left: 90px;
-    top: 554px;
+    left: 131px;
+    top: 540px;
+    border-color: #0A3871;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 16px;
+    width: 160px;
+    height: 50px;
 }
 
 .desencriptar{
     position: absolute;
-    top: 554px;
-    left: 247px;
+    top: 540px;
+    left: 435px;
+    border-color: #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 16px;
+    width: 160px;
+    height: 50px;
 }
 
 .limpiar{
     position: absolute;
-    top: 554px;
-    left: 407px;
+    top: 540px;
+    left: 704px;
+    border-color: #0A3871;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 16px;
+    width: 160px;
+    height: 50px;
 }
 
 
@@ -91,8 +113,14 @@ body{
 
 .cop{
     position: absolute;
-    top: 502px;
-    left: 126px;
+    top: 506px;
+    left: 77px;
+    border-color: #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 16px;
+    width: 160px;
+    height: 50px;
 }
 
 /*.rectangulo:hover{
