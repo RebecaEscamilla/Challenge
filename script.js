@@ -10,7 +10,7 @@ function MayusAcen(texto){
                 if((texto.charCodeAt(i))>= 160 && (texto.charCodeAt(i))<=163 ){
                     band=true;
                 }else{
-                    if((texto.charCodeAt(i)) == 130 || (texto.charCodeAt(i))== 181 || (texto.charCodeAt(i))== 144 || (texto.charCodeAt(i))== 214 || (texto.charCodeAt(i))== 224 || (texto.charCodeAt(i))==233){
+                    if(((texto.charCodeAt(i)) == 130) || ((texto.charCodeAt(i))== 181) || ((texto.charCodeAt(i))== 144) || ((texto.charCodeAt(i))== 214) || ((texto.charCodeAt(i))== 224) || ((texto.charCodeAt(i))==233)){
                         band=true;
                     }
                 }
@@ -23,7 +23,6 @@ function MayusAcen(texto){
 
 function encriptar() {
   var texto = document.getElementById("box-texto").value;
-  console.log(texto);
   var encriptado = new Array();
   /*La letra "e" es convertida para "enter"
     La letra "i" es convertida para "imes"
@@ -31,7 +30,6 @@ function encriptar() {
     La letra "o" es convertida para "ober"
     La letra "u" es convertida para "ufat"*/
     if(MayusAcen(texto)){
-        
         alert("Solo letras minúsculas y sin acentos");
     }else{
         for(var i=0;i<texto.length;i++){
@@ -51,7 +49,6 @@ function encriptar() {
             
         }
     }
-    console.log(encriptado);
 }
 
 function desencriptar(){
@@ -59,7 +56,7 @@ function desencriptar(){
 }
 
 function limpiar(){
-    
+  document.getElementById("box-texto").value = "";
 }
 
 function copiar(){
