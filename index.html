@@ -8,7 +8,7 @@
         <title>Encriptador de texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     </head>
 
@@ -18,11 +18,9 @@
                 <h1><img src="imagenes/Logo.png"></h1>
             </div>
         </header>
-
         <main>
-            <section class="principal">
-
-                <textarea type="text" id="box-texto" class="box-texto" required placeholder="Ingrese el texto aqui"></textarea>
+            <section>
+                <textarea class="box-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
                 
                 <div class="restricciones">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-exclamation-circle-fill" viewBox="0 0 16 16">
@@ -30,33 +28,27 @@
                     </svg>
                     <p class="info" >Solo letras minúsculas y sin acentos</p>
                 </div>
-                
-                <button class="encriptar" onclick="encriptar()" >Encriptar</button>
-                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
-                <button class="limpiar" onclick="limpiar()">Limpiar</button>
+                <div class="botoness">
+                    <button class="encriptar" onclick="btnEncriptar()" >Encriptar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="limpiar" onclick="limpiar()">Limpiar</button>
+                </div>
                 
             </section>
-            <section class="resultado">
-                
-                <div class="rectangulo">
-                    <img src="imagenes/Muñeco.png">
-                    <p class="text">Ningún mensaje fue encontrado</p>
-                    <p class="text">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    
+            <section>
+                <textarea id="mensaje" class="mensaje" cols="20" rows="10"></textarea>
+                <!--<img class="muneco" src="imagenes/Muñeco.png">-->
+                <div id="resultado" class="resultado">
+                    <h2 class="tex1">Ningún mensaje fue encontrado</h2>
+                    <h3 class="tex2">Ingresa el texto que desees 
+                        <br>encriptar o desencriptar</h3>
                 </div>
-
-                <div id="TextoResultado" class="TextoResultado">
-                    <p class="text"></p>
-                    <button class="cop">Copiar</button>
+                <div>
+                    <button id="cop" class="cop" onclick="copiar()">Copiar</button>
                 </div>
-
             </section>
-
         </main>
-
-        <footer>
-
-        </footer>
+        <script src="script.js"></script>
     </body>
-
+    
 </html>

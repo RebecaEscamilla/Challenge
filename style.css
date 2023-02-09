@@ -1,31 +1,55 @@
-body{
+*{
     background: #F3F5FC;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
 }
 .logo{
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 120px;
-    height: 48px;
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
 }
-
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
 .box-texto{
-    position: absolute;
-    top: 142px;
-    left:  137px;
-    font-size: 20px;
-    background-color: transparent;
     border: none;
-    outline: none;
-    width: 40em;
-    height: 15em;
+    color:#0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+::placeholder{
+    color: #0A3871;
+}
+.box-texto:focus{
+    outline:none;
+}
+.mensaje{
+    background: white;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 35px 75px;
+    background-size: 80%;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 520px;
+    margin-top: 10px;
+    padding-left:110px;
+    padding-top: 150px;
+    position: fixed;
 }
 
-.restricciones{
-    position: relative;
-    top: 490px;
-    
+
+.mensaje:focus{
+    outline:none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
 }
 
 .bi-exclamation-circle-fill{
@@ -36,6 +60,7 @@ body{
 .info{
     position: absolute;
     left: 160px;
+    font-size: 18px;
 }
 
 
@@ -75,69 +100,36 @@ body{
     height: 50px;
 }
 
-
-.rectangulo{
-    background: #FFFFFF;
-    position: absolute;
-    left: 1000px;
-    top: 25px;
-    border-radius: 2em;
-    box-shadow: 5px 5px 5px lightgrey;
-    width: 300px;
-    height: 583px;
-}
-
-.rectangulo img{
-    position: relative;
-    top: 86px;
-    left: 30px;
-    width: 80%;
-}
-
-.rectangulo .text:nth-child(2){
-    text-align: center;
-    position: absolute;
-    top: 319px;
-    left: 24px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.rectangulo .text:nth-child(3){
-    position: absolute;
-    top: 376px;
-    left: 13px;
-    text-align: center;
-    font-size: 15px;
-}
-
-
-.TextoResultado{
-    background: #FFFFFF;
-    position: absolute;
-    left: 1000px;
-    top: 25px;
-    border-radius: 2em;
-    box-shadow: 5px 5px 5px lightgrey;
-    width: 300px;
-    height: 583px;
-    display:none;
-    
-}
-
 .cop{
-    
-    position: absolute;
-    top: 506px;
-    left: 77px;
+    cursor:pointer;
     border-color: #0A3871;
     background-color: #D8DFE8;
     color: #0A3871;
     border-radius: 16px;
     width: 160px;
     height: 50px;
+    margin-left: 623px;
+    margin-top: 402px;
+    position: absolute;
+    display: none;
+    
 }
 
-/*.rectangulo:hover{
+.tex1{
+    background: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    top: 410px;
+    left: 980px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-}*/
+.tex2{
+    background: #FFFFFF;
+    position: absolute;
+    top: 440px;
+    left: 1040px;
+    font-size: 15px;
+    text-align: center;
+}
