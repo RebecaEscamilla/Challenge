@@ -256,4 +256,14 @@ main{
         left: 109px;
         font-size: 25px;
     }
+    .bi-exclamation-circle-fill{
+        position: absolute;
+        left: 83px;
+    }
+    
+    .info{
+        position: absolute;
+        left: 107px;
+        font-size: 18px;
+    }
 }
