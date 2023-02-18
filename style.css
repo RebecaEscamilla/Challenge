@@ -105,18 +105,18 @@ main{
     border-color: #0A3871;
     background-color: #D8DFE8;
     color: #0A3871;
+    position: absolute;
     border-radius: 16px;
     width: 160px;
     height: 50px;
     margin-left: 623px;
     margin-top: 402px;
-    position: absolute;
     display: none;
     
 }
 
 .tex1{
-    background: #FFFFFF;
+    background: none;
     text-align: center;
     position: absolute;
     top: 410px;
@@ -126,10 +126,134 @@ main{
 }
 
 .tex2{
-    background: #FFFFFF;
+    background: none;
     position: absolute;
     top: 440px;
     left: 1040px;
     font-size: 15px;
     text-align: center;
+}
+
+@media screen and (max-width:768px){
+
+    main{
+        display: inline-block;
+    }
+    .mensaje{
+        background-image: none;
+        margin-left: 10px;
+        margin-top: 158px;
+        padding-left: 225px;
+        padding-right: 194px;
+    }
+    .encriptar{
+        position: absolute;
+        left: 76px;
+        top: 522px;
+        width: 197px;
+        height: 50px;
+    }
+    
+    .desencriptar{
+        position: absolute;
+        left: 290px;
+        top: 522px;
+        width: 197px;
+        height: 50px;
+    }
+    
+    .limpiar{
+        position: absolute;
+        left: 508px;
+        top: 522px;
+        width: 197px;
+        height: 50px;
+    }
+    
+    .cop{
+        position: absolute;
+        left: -434px;
+        top: 522px;
+        width: 515px;
+        height: 50px;
+        display: none;
+        
+    }
+    
+    .tex1{
+        position: absolute;
+        top: 675px;
+        left: 133px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .tex2{
+        position: absolute;
+        top: 795px;
+        left: 251px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    main{
+        display: inline-block;
+        
+        
+    }
+    .mensaje{
+        background-image: none;
+        margin-left: -21px;
+        margin-top: 273px;
+        padding-left: 89px;
+        padding-right: 91px;
+    }
+    .encriptar{
+        position: absolute;
+        left: 76px;
+        top: 522px;
+        width: 386px;
+        height: 50px;
+    }
+    
+    .desencriptar{
+        position: absolute;
+        left: 76px;
+        top: 591px;
+        width: 386px;
+        height: 50px;
+    }
+    
+    .limpiar{
+        position: absolute;
+        left: 76px;
+        top: 649px;
+        width: 386px;
+        height: 50px;
+    }
+    
+    .cop{
+        position: absolute;
+        left: -522px;
+        top: 602px;
+        width: 346px;
+        height: 50px;
+    }
+    
+    .tex1{
+        position: absolute;
+        top: 767px;
+        left: 57px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .tex2{
+        position: absolute;
+        top: 860px;
+        left: 109px;
+        font-size: 25px;
+    }
 }
